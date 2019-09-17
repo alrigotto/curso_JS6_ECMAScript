@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Contador</title>
+    
+    <!--link para CSS em arquivo externo--> 
+    <link rel="stylesheet" href="estilo.css"> 
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+
+    </header>
+
+    <section>
+        <div id="div_inicio">
+            Início &nbsp
+            <input type="number" name="inicio_txt" id="inicio_txt">
+        </div>
+
+        <div id="div_fim">
+            Fim &nbsp &nbsp 
+            <input type="number" name="fim_txt" id="fim_txt">
+        </div>
+        
+        <div id="div_passo">
+            Passo
+            <input type="number" name="passo_txt" id="passo_txt">
+        </div>
+
+        <div id="div_botao">
+            <input id="btn_contar" type="button" value="Contar" onclick="(contar())"> 
+        </div>
+
+        <div id="div_contando">
+            Contando:
+            <p id="area_de_contagem">Preparando a contagem...</p>
+            <p id="contagem_finalizada"></p>
+           
+            
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; André Luiz Rigotto</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

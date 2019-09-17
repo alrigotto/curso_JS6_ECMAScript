@@ -1,0 +1,71 @@
+body {
+    background: rgb(124, 187, 166);
+    font: normal 15pt Arial;
+
+}
+header {
+    color: white;
+    text-align: center;
+
+}
+section {
+    color: black;
+    background: rgb(65, 109, 76);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.808);
+}
+div{
+    font: bold 20px Arial;
+    padding: 5px;
+    padding-left: 0px;
+    background: rgb(175, 175, 175);
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.61);
+}
+p#numero_txt{
+    padding-left: 25px;
+    vertical-align: middle;
+
+
+}
+input#numero{
+    font: normal 20px arial;
+    vertical-align: middle;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    
+}
+
+input#botao{
+    height: 36px;
+    width: 140px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 30px;
+    font: bold 15px Arial;
+
+
+}
+select{
+    font: normal 18px Arial;
+    /* height: 235px; */
+    width: 200px;
+    align-self: center;
+    margin: 25px;
+
+
+
+}
+footer {
+    color:white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+

@@ -1,0 +1,38 @@
+body {
+    background: rgb(102, 138, 214);
+    font: normal 15pt Arial;
+
+}
+header {
+    color: white;
+    text-align: center;
+
+}
+section {
+    color: black;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.808);
+
+}
+footer {
+    color:white;
+    text-align: center;
+    font-style: italic;
+    padding-top: 10px;
+
+
+}
+input#btn {
+
+    /* color: blue; */
+    /* background: green; */
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font: bold 20px Arial;
+    align-self: center;
+}

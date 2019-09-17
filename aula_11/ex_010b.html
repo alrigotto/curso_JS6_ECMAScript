@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Verificação de Nacionalidade</title>
+    <style>
+        h1{
+            font: normal 20pt Tahoma;            
+        }
+        input#verificar{
+            font: normal 10pt Tahoma;
+            margin-right: 10px;
+            width: 80px;
+            height: 20px;
+            align-self: center;
+            background: brown;
+            color: rgb(225, 236, 238);
+            border: 5px brown;
+            
+        }
+        input#cx_texto{
+            font: normal 15pt Tahoma;
+            margin-right: 10px;
+            /* margin-top: 30px; */
+        }
+        p#pergunta{
+            font: normal 10pt Tahoma;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        body{
+            background: rgb(204, 204, 228);
+            color: rgb(69, 65, 65);            
+        }
+        p#resultado{
+            font: bold 18pt Tahoma;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p#onde_nasceu{
+            font: italic 12pt Tahoma;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade.</h1>
+    <p id="pergunta">Qual foi o país que você nasceu?</p>
+    <input type="text" name="cx_texto" id="cx_texto">
+    <input type="button" value="Verificar" id="verificar" onclick="verificar()">
+    <p id= onde_nasceu> Onde nasceu.</p>
+    <p id="resultado">Resultado</p>
+
+    <script>
+        function verificar(){
+            var texto = window.document.querySelector('input#cx_texto')
+            var res = window.document.getElementById('resultado')
+            var nasceu = window.document.querySelector('p#onde_nasceu')
+            if (texto.value == 'Brasil'){
+                res.innerHTML = `Você é Brasileiro!`
+                nasceu.innerHTML = `Você nasceu no <strong>${texto.value}</strong>, portanto...`
+            }else{
+                res.innerHTML = `Você é estrangeiro!`
+                nasceu.innerHTML = `Você nasceu no <strong>${texto.value}</strong>, portanto...`
+            }
+        }
+    </script>
+    
+</body>
+</html>

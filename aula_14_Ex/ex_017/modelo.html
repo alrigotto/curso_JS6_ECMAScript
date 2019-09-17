@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabuada</title>
+    
+    <!--link para CSS em arquivo externo--> 
+    <link rel="stylesheet" href="estilo.css"> 
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+
+    </header>
+
+    <section>
+        <div>
+            <p id="numero_txt">
+                Número:
+                <input type="number" name="numero" id="numero">
+                <input type="button" value="Gerar Tabuada" id="botao" onclick="gerar_tabuada()">
+
+            </p>
+
+        </div>        
+
+        <div>
+            <select size="10" name="resultados" id="resultados">
+                <option value="">Escolha um número</option>
+            </select>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; André Luiz Rigotto</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
